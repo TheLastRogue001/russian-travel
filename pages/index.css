@@ -1,11 +1,124 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
 .page {
+  font-family: "Inter", sans-serif;
+  background: #2a2c2f;
+}
+
+.layout {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "content content content"
+    "footer footer footer";
+  grid-template-rows: 136px 1fr 134px;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100vh;
+  max-width: 1280px;
+  margin: 0 auto;
+  border: 1px solid black;
 }
 
 .header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  margin: 1.75rem 2.4rem 2.8rem;
+}
+.header__logo {
+  justify-self: start;
+  align-items: end;
+  width: 176px;
+  height: 52px;
+}
+.header__lang {
+  display: flex;
+  justify-self: end;
+  align-items: end;
+  column-gap: 1.125em;
+  margin-bottom: 0.5em;
+}
+.header__lang-link {
+  height: 29px;
+  width: 28px;
+  opacity: 1;
+  transition: opacity 0.8s, linear 0.3s;
+}
+.header__lang-link:hover {
+  border-bottom: 1px solid #fff;
+  opacity: 0.2;
+  transition: opacity 0.9s, linear 0.3s;
 }
 
-.content{
+.content {
+  grid-area: content;
+  grid-template-areas:
+    "lead lead lead"
+    "intro intro intro"
+    "photo-grid photo-grid photo-grid"
+    "places places places"
+    "cover cover cover";
+  grid-template-rows: 962px 1fr 134px;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid black;
+}
+
+.lead {
+  grid-area: lead;
+  display: grid;
+}
+.lead__title {
+  width: 720px;
+  height: 200px;
+  margin: 0 auto;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 100px;
+  text-align: center;
+  color: #ffffff;
+}
+.lead__subtitle {
+  width: 640px;
+  height: 72px;
+  margin: 0 auto;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.lead__image {
+  width: 928px;
+  height: 580px;
+  margin: 0 auto;
+}
+.lead__caption {
+}
+
+.intro {
+  grid-area: intro;
+}
+
+.photo-grid {
+  grid-area: photo-grid;
+}
+
+.places {
+  grid-area: places;
+}
+
+.cover {
+  grid-area: cover;
 }
 
 .footer {
+  grid-area: footer;
+  border: 1px solid black;
 }
