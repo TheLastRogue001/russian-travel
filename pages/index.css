@@ -6,6 +6,7 @@ body {
 .page {
   font-family: "Inter", sans-serif;
   background: #2a2c2f;
+  min-width: 723px;
 }
 
 .layout {
@@ -15,11 +16,9 @@ body {
     "content content content"
     "footer footer footer";
   grid-template-rows: 136px 1fr 134px;
-  grid-template-columns: repeat(3, 1fr);
-  height: 100vh;
+  grid-template-columns: 1fr;
   max-width: 1280px;
   margin: 0 auto;
-  border: 1px solid black;
 }
 
 .header {
@@ -55,70 +54,115 @@ body {
 
 .content {
   grid-area: content;
-  grid-template-areas:
-    "lead lead lead"
-    "intro intro intro"
-    "photo-grid photo-grid photo-grid"
-    "places places places"
-    "cover cover cover";
-  grid-template-rows: 962px 1fr 134px;
-  grid-template-columns: repeat(3, 1fr);
-  border: 1px solid black;
+  grid-template-rows: repeat(3, 1fr);
 }
 
 .lead {
-  grid-area: lead;
   display: grid;
+  justify-items: center;
+  grid-template-columns: minmax(550px, auto);
+  padding: 0 3rem;
 }
 .lead__title {
-  width: 720px;
-  height: 200px;
-  margin: 0 auto;
+  max-width: 720px;
+  width: 100%;
+  margin: 0;
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
-  font-size: 96px;
-  line-height: 100px;
+  font-size: 6rem;
+  line-height: 104%;
   text-align: center;
   color: #ffffff;
+  margin-bottom: 32px;
 }
 .lead__subtitle {
-  width: 640px;
-  height: 72px;
-  margin: 0 auto;
+  max-width: 640px;
+  width: 100%;
+  margin: 0;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
-  line-height: 36px;
+  font-size: 1.875rem;
+  line-height: 120%;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
+  margin-bottom: 64px;
 }
 .lead__image {
-  width: 928px;
-  height: 580px;
-  margin: 0 auto;
+  max-width: 984px;
+  width: 100%;
+  margin: 0;
+  object-fit: cover;
 }
 .lead__caption {
+  max-width: 984px;
+  width: 100%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.625rem;
+  line-height: 14px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0.5rem 0 0;
 }
 
 .intro {
-  grid-area: intro;
+  display: grid;
+  grid-template-columns: minmax(550px, auto);
+  padding: 0 3rem;
+  border: 1px solid black;
+}
+.intro__title {
+  max-width: 690px;
+  width: 100%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 107%;
+  color: #ffffff;
+  border: 1px solid black;
+  margin: 5.75rem 0 2.5rem 0;
+}
+.intro__text {
+  max-width: 690px;
+  width: 100%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 163%;
+  color: #ffffff;
+  border: 1px solid black;
+  margin: 0 0 2.0625rem 0;
+}
+.intro__list {
+  max-width: 690px;
+  width: 100%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 150%;
+  color: #ffffff;
+  list-style-type: none;
+  border: 1px solid black;
+  margin: 0;
+  padding: 0;
 }
 
 .photo-grid {
-  grid-area: photo-grid;
 }
 
 .places {
-  grid-area: places;
 }
 
 .cover {
-  grid-area: cover;
 }
 
 .footer {
   grid-area: footer;
-  border: 1px solid black;
 }
