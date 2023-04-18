@@ -1,0 +1,8 @@
+.cover {
+  display: flex;
+  flex-direction: column;
+  max-width: 1184px;
+  max-height: 740px;
+  margin: 0 auto;
+  margin-top: 5.75rem;
+}

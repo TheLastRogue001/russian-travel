@@ -1,0 +1,31 @@
+.footer__link {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 112%;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0;
+  opacity: 1;
+  transition: opacity 0.8s, linear 0.3s;
+}
+.footer__link:hover {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 112%;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0;
+  opacity: 0.3;
+  transition: opacity 0.8s, linear 0.3s;
+}
+@media screen and (max-width: 767px) {
+  .footer__link {
+    font-size: calc(24px + 10px);
+    line-height: 100%;
+    color: #ffffff;
+  }
+}
