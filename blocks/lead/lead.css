@@ -1,0 +1,16 @@
+.lead {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: minmax(150px, auto);
+  margin: 0 auto;
+}
+@media screen and (max-width: 1023px) {
+  .lead__subtitle {
+    margin-bottom: 3.5rem;
+  }
+  .lead__caption {
+    max-width: 92%;
+    font-size: calc(10px + 4px);
+    margin-top: 0.5rem;
+  }
+}

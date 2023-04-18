@@ -1,0 +1,31 @@
+.place__website__link {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 122%;
+  text-decoration-line: underline;
+  color: #ffffff;
+  margin: 0;
+}
+.place__website__link:hover {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 122%;
+  text-decoration-line: underline;
+  color: #ffffff;
+  margin: 0;
+  opacity: 0.8;
+  transition: opacity 1s, linear 0.1s;
+}
+@media screen and (max-width: 767px) {
+  .place__website__link {
+    font-size: calc(18px + 12px);
+    text-decoration-line: underline;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+}

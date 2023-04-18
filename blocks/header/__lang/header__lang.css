@@ -1,0 +1,7 @@
+.header__lang {
+  display: flex;
+  justify-self: end;
+  align-items: end;
+  column-gap: 1.125em;
+  margin-bottom: 0.5em;
+}

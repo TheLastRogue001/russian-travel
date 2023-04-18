@@ -1,0 +1,11 @@
+.header__lang-link {
+  height: 29px;
+  width: 28px;
+  opacity: 1;
+  transition: opacity 0.8s, linear 0.3s;
+}
+.header__lang-link:hover {
+  border-bottom: 1px solid #fff;
+  opacity: 0.2;
+  transition: opacity 0.9s, linear 0.3s;
+}
