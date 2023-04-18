@@ -25,7 +25,7 @@ ___
 
 ##  Ссылка на GitHub Pages:
 
->_https://thelastrogue001.github.io/russian-travel/_
+>_https://thelastrogue001.github.io/russian-travel/index.html_
 
 ___
 
