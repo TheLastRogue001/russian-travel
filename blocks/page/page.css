@@ -1,7 +1,11 @@
+html {
+  font-family: "Times New Roman", Times, Calibri, Candara, Segoe, Segoe UI,
+    Optima, Arial, sans-serif;
+}
+
 .page {
   padding: 0;
   margin: 0;
-  font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
   font-family: "Inter", sans-serif;
   background: #2a2c2f;
   min-width: 320px;
