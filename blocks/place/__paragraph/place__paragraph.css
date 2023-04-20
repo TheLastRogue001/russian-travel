@@ -20,7 +20,7 @@
 
 @media screen and (max-width: 767px) {
   .place__paragraph {
-    margin: 0 1rem;
+    margin: 2rem 1rem 0;
     line-height: 163%;
     color: #ffffff;
   }
