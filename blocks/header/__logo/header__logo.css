@@ -1,6 +1,10 @@
 .header__logo {
-  justify-self: start;
-  align-items: end;
-  width: 176px;
-  height: 52px;
+  display: flex;
+  align-self: start;
+  max-width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .header__logo {
+    min-width: 142px;
+  }
 }

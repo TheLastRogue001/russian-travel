@@ -1,10 +1,7 @@
-body {
+.page {
   padding: 0;
   margin: 0;
-}
-
-.page {
   font-family: "Inter", sans-serif;
   background: #2a2c2f;
-  min-width: 723px;
+  min-width: 320px;
 }

@@ -1,7 +1,12 @@
 .header__lang {
   display: flex;
   justify-self: end;
-  align-items: end;
+  align-self: start;
   column-gap: 1.125em;
-  margin-bottom: 0.5em;
+  padding: 0;
+}
+@media screen and (max-width: 350px) {
+  .header__lang {
+    margin-top: -5px;
+  }
 }

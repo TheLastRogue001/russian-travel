@@ -6,13 +6,13 @@
   margin: 0 auto;
   padding: 0 3rem;
 }
-@media screen and (max-width: 767px) {
-  .intro {
-    padding: 0 1rem;
-  }
-}
 @media screen and (max-width: 1023px) {
   .intro {
     padding: 0 1.5rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .intro {
+    padding: 0 1rem;
   }
 }

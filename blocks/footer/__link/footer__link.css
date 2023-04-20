@@ -7,8 +7,6 @@
   color: #ffffff;
   text-decoration: none;
   margin: 0;
-  opacity: 1;
-  transition: opacity 0.8s, linear 0.3s;
 }
 .footer__link:hover {
   font-family: "Inter";
@@ -19,12 +17,16 @@
   color: #ffffff;
   text-decoration: none;
   margin: 0;
-  opacity: 0.3;
-  transition: opacity 0.8s, linear 0.3s;
+  opacity: 0.8;
 }
 @media screen and (max-width: 767px) {
   .footer__link {
-    font-size: calc(24px + 10px);
+    font-size: 24px;
+    line-height: 100%;
+    color: #ffffff;
+  }
+  .footer__link:hover {
+    font-size: 24px;
     line-height: 100%;
     color: #ffffff;
   }

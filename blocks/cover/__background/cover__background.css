@@ -11,6 +11,8 @@
   min-height: 740px;
   text-decoration: none;
   z-index: 0;
+  max-width: 100%;
+  width: 100%;
 }
 .cover__background::before {
   content: "";
@@ -39,6 +41,6 @@
 }
 @media screen and (max-width: 767px) {
   .cover__background {
-    min-height: 400px;
+    min-height: 200px;
   }
 }
