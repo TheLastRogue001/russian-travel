@@ -2,7 +2,7 @@
   margin: 0;
   max-width: 984px;
   width: 100%;
-  font-family: "Inter";
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
@@ -19,13 +19,11 @@
 }
 @media screen and (max-width: 1023px) {
   .lead__caption {
-    margin: 0.5rem 0 0 1.5rem;
+    width: calc(100% - 24px);
   }
 }
 @media screen and (max-width: 767px) {
   .lead__caption {
-    max-width: 200px;
-    font-size: 10px;
-    margin: 8px 0 0 16px;
+    margin-left: 16px;
   }
 }
