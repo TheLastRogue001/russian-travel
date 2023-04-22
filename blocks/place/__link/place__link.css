@@ -12,8 +12,3 @@
   opacity: 0.8;
   transition: opacity 1s, linear 0.1s;
 }
-@media screen and (max-width: 767px) {
-  .place__link {
-    font-size: 18px;
-  }
-}
